@@ -15,6 +15,7 @@ div.contents > div.date{
 }
 
 div.contents > div.date > div.when{
+    float: left;
     margin-left: 20px;
     line-height: 34px;
 }
@@ -23,37 +24,22 @@ div.contents > div.first{
     margin-top: 50px;
 }
 
-/* .triangle{
-    position: relative;
+div.date > .triangle{
+    float: right;
     width: 11px;
     height: 11px;
-    top: 8px;
-    right: 15px;
+    margin-top: 8px;
+    margin-right: 16px;
 
-    background: #FFFFFF;
+    background: #ffffff;
     transform: rotate(-180deg);
-} */
-
-div.contents > div.menu-bar{
-    float: left;
-    width: 168px;
-    height: 368px;
-    margin: 30px 83px 59px 81px;
-
-    font-family: 'S-Core Dream';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    text-align: center;
 }
 
 div.contents > div.menu-bar{
     float: left;
     width: 168px;
     height: 368px;
-    margin: 30px 83px 59px 81px;
+    margin: 30px 0px 59px 81px;
 
     font-family: 'S-Core Dream';
     font-style: normal;
