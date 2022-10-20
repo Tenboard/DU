@@ -26,12 +26,15 @@ div.contents > div.first{
 
 div.date > .triangle{
     float: right;
-    width: 11px;
-    height: 11px;
+    width: 0px;
+    height: 0px;
     margin-top: 8px;
     margin-right: 16px;
 
-    background: #ffffff;
+    border-bottom: 10px solid #ffffff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+
     transform: rotate(-180deg);
 }
 
@@ -65,8 +68,6 @@ div.contents > div.menu-bar > span.when{
 
     border: 1px solid #2D5FC0;
     border-radius: 50%;
-
-    text-align: center;
 }
 
 div.contents > div.menu-bar > img{
