@@ -1,0 +1,27 @@
+div.contents > div.date{
+    width: 709px;
+    height: 34px;
+    margin: 0px 55px 5px;
+
+    font-family: 'S-Core Dream';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+
+    background: #E5E5E5;
+    border-radius: 7px;
+}
+
+div.contents > div.date > div.when{
+    margin-left: 20px;
+    line-height: 34px;
+}
+
+div.contents > div.first{
+    margin-top: 50px;
+}
+
+div.contents > div.mennu-bar{
+    float: left;
+}
