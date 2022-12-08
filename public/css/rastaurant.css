@@ -47,7 +47,7 @@ div.contents > div.menu-bar{
     text-align: center;
 }
 
-div.contents > div.menu-bar > span.when{
+div.contents > div.menu-bar > span.meal-type{
     box-sizing: border-box;
     width: 60px;
     height: 60px;
