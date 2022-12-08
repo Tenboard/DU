@@ -9,6 +9,8 @@ const localUserNum = localStorage.getItem('userNum');
 const localUserMail = localStorage.getItem('userMail');
 const userNumBtn = document.querySelector('#number');
 const userMailBtn = document.querySelector('#email');
+const regNum = /[0-9]/g;
+const regMail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
 
 
 // 이름 변경
@@ -31,6 +33,14 @@ userNameBtn.onclick = () => {
 // 학번 메일 변경
 userNumBtn.onclick = () => {
   const userNum = prompt('학번을 입력해 주세요');
+  if (regNum.exec(userNum) === null) {
+    alert('숫자만 입력해주세요');
+    return false;
+  }
+  if (userNum.length !== 9) {
+    alert('자릿수를 확인해 주세요');
+    return false;
+  }
   localStorage.setItem('userNum', userNum);
   userNumBtn.innerHTML = userNum;
 };
@@ -41,7 +51,10 @@ if (localUserNum) {
 
 userMailBtn.onclick = () => {
   const userMail = prompt('이메일을 입력해 주세요');
-  // todo: userName에 대한 유효성 검사
+  if (regMail.exec(userMail) === null) {
+    alert('이메일 형식에 맞게 입력해주세요');
+    return false;
+  }
   localStorage.setItem('userMail', userMail);
   userMailBtn.innerHTML = userMail;
 };
