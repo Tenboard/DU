@@ -11,6 +11,10 @@ div.contents > div.name{
     font-size: 24px;
     line-height: 29px;
 
+    cursor: default;
+}
+
+#user-name{
     cursor: pointer;
 }
 
