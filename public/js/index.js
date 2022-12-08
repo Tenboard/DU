@@ -4,7 +4,7 @@ const localUserName = localStorage.getItem('userName');
 const userNameBtn = document.querySelector('#user-name');
 
 const setUserNameInnerHtml = (name) => {
-  headerUserNameElement.innerHTML = `${name} <span>님</span>`;
+  headerUserNameElement.innerHTML = `${name} <span> 님</span>`;
   userNameBtn.textContent = name;
 };
 

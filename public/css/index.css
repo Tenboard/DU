@@ -7,7 +7,6 @@ div.contents > div.name{
 
     font-family: 'S-Core Dream';
     font-style: normal;
-    font-weight: 600;
     font-size: 24px;
     line-height: 29px;
 
@@ -15,6 +14,8 @@ div.contents > div.name{
 }
 
 #user-name{
+    font-weight: 600;
+
     cursor: pointer;
 }
 
