@@ -19,6 +19,14 @@ div.contents > div.name{
     cursor: pointer;
 }
 
+#number{
+    cursor: pointer;
+}
+
+#email{
+    cursor: pointer;
+}
+
 div.contents > div.name > span{
     font-weight: 300;
 }
