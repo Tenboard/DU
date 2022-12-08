@@ -36,7 +36,7 @@ userNumBtn.onclick = () => {
 };
 
 if (localUserNum) {
-  userNumBtn.innerHTML = localUserName;
+  userNumBtn.innerHTML = localUserNum;
 }
 
 userMailBtn.onclick = () => {
